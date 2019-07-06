@@ -27,7 +27,12 @@ public class Menu {
         System.out.println("Składnik 3: " + drink1.component3.componentName + " - " + drink1.component3.part);
         System.out.println("Suma: " + (drink1.component1.part + drink1.component2.part + drink1.component3.part +"\n"));
 //drink 2
-        Drink drink2 = drink1;
+        Drink drink2 = new Drink();
+
+        //komponenty
+        drink2.component1 = new Component();
+        drink2.component2 = new Component();
+        drink2.component3 = new Component();
 
         drink2.name = "Kawa";
         drink2.price = 5.5;
